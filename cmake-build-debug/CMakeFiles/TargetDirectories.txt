@@ -1,0 +1,3 @@
+/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles/matrix.dir
+/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles/rebuild_cache.dir

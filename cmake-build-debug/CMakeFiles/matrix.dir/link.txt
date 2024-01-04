@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/matrix.dir/s21_matrix.c.o -o matrix 
