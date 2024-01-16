@@ -2,12 +2,9 @@
 // Created by moroshma on 12/28/23.
 //
 
-#include "s21_matrix.h"
-
-
 #include <malloc.h>
 #include <stdlib.h>
-
+#include "unit_tests/s21_test_matrix.h"
 bool s21_check_size_matrix(matrix_t *A, matrix_t *B) {
   if (A->rows != B->rows || A->columns != B->columns || A->rows < 1 ||
       A->columns < 1 || B->rows < 1 || B->columns < 1 || !A->matrix ||
@@ -128,35 +125,45 @@ int s21_mult_matrix(matrix_t *A, matrix_t *B, matrix_t *result) {
         }
     }
     return SUCCESS;
-
-
-
 }
 
-
-#include "stdio.h"
-int main() {
-//  struct matrix_struct ms1 = {};
-//  struct matrix_struct ms2 = {};
-//
-//  s21_create_matrix(1, 5, &ms1);
-//  s21_create_matrix(1, 5, &ms2);
-//  s21_eq_matrix(&ms1, &ms2);
-//
-//  s21_remove_matrix(&ms1);
-//  s21_remove_matrix(&ms2);
-    char * ch = NULL;
-    ch = calloc(1024, 1);
-
-    ch = realloc(ch, 2048);
-    size_t i = malloc_usable_size(ch);
-
-    ch = realloc(ch, 4048);
-     i = malloc_usable_size(ch);
-
-    ch = realloc(ch, 1024);
-
-    i = malloc_usable_size(ch);
-
-
+double get_rand(double min, double max)
+{
+    double range = (max - min);
+    double div = RAND_MAX / range;
+    return min + (rand() / div);
 }
+int s21_transpose(matrix_t *A, matrix_t *result){return SUCCESS;}
+
+int s21_calc_complements(matrix_t *A, matrix_t *result){return SUCCESS;}
+
+int s21_determinant(matrix_t *A, double *result){return SUCCESS;}
+
+int s21_inverse_matrix(matrix_t *A, matrix_t *result){return SUCCESS;}
+
+void run_tests() {
+    Suite *suite = NULL;
+    SRunner *sRunner = NULL;
+
+    Suite *suite_array[] = {
+            suite_create_matrix(),    suite_eq_matrix(),
+             suite_sub_matrix(),       suite_sum_matrix(),
+             suite_mult_matrix(),      suite_mult_number_matrix(),
+             suite_transpose_matrix(), suite_calc_complements(),
+             suite_determinant(),      suite_inverse_matrix(),
+             suite_matrix_gather()};
+    int count_of_tests = sizeof(suite_array) / sizeof(Suite *);
+    for (int i = 0; i < count_of_tests; i++) {
+        suite = suite_array[i];
+        sRunner = srunner_create(suite);
+        srunner_set_fork_status(sRunner, CK_NOFORK);
+
+        srunner_run_all(sRunner, CK_NORMAL);
+        srunner_free(sRunner);
+
+        suite = NULL;
+        sRunner = NULL;
+    }
+}
+
+int main() { run_tests(); }

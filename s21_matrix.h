@@ -8,7 +8,7 @@
 #include <math.h>
 
 typedef struct matrix_struct {
-    double** matrix;
+    double **matrix;
     int rows;
     int columns;
 } matrix_t;
@@ -19,6 +19,8 @@ enum ERROR {
     INVALID_CALC,
     CALLOC_ERROR
 };
+
+
 
 /*
  0 - OK

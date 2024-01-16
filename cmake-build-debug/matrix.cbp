@@ -82,6 +82,39 @@
 		<Unit filename="/home/moroshma/matrix-c/s21_matrix.h">
 			<Option target="matrix"/>
 		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_calc_complements_test.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_create_test.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_determinant_test.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_eq_test.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_inverse_test.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_matrix_gather.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_mult_matrix_test.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_mult_number_test.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_sub_test.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_sum_test.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/unit_tests/s21_transpose_test.c">
+			<Option target="matrix"/>
+		</Unit>
 		<Unit filename="/home/moroshma/matrix-c/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

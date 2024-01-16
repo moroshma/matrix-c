@@ -83,17 +83,193 @@ CMakeFiles/matrix.dir/s21_matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/s21_matrix.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/s21_matrix.c -o CMakeFiles/matrix.dir/s21_matrix.c.s
 
+CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_calc_complements_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_calc_complements_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_calc_complements_test.c > CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_calc_complements_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_create_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_create_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_create_test.c > CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_create_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_determinant_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_determinant_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_determinant_test.c > CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_determinant_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_eq_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_eq_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_eq_test.c > CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_eq_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_inverse_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_inverse_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_inverse_test.c > CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_inverse_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o: /home/moroshma/matrix-c/unit_tests/s21_matrix_gather.c
+CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o -c /home/moroshma/matrix-c/unit_tests/s21_matrix_gather.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_matrix_gather.c > CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_matrix_gather.c -o CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_mult_matrix_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_mult_matrix_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_mult_matrix_test.c > CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_mult_matrix_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_mult_number_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_mult_number_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_mult_number_test.c > CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_mult_number_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_sub_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_sub_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_sub_test.c > CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_sub_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_sum_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_sum_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_sum_test.c > CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_sum_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.s
+
+CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o: /home/moroshma/matrix-c/unit_tests/s21_transpose_test.c
+CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o -MF CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o.d -o CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o -c /home/moroshma/matrix-c/unit_tests/s21_transpose_test.c
+
+CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/unit_tests/s21_transpose_test.c > CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.i
+
+CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_transpose_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.s
+
 # Object files for target matrix
 matrix_OBJECTS = \
-"CMakeFiles/matrix.dir/s21_matrix.c.o"
+"CMakeFiles/matrix.dir/s21_matrix.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o" \
+"CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o"
 
 # External object files for target matrix
 matrix_EXTERNAL_OBJECTS =
 
 matrix: CMakeFiles/matrix.dir/s21_matrix.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o
+matrix: CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o
 matrix: CMakeFiles/matrix.dir/build.make
 matrix: CMakeFiles/matrix.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable matrix"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/matrix.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

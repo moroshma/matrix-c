@@ -153,6 +153,270 @@ s21_matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_matrix.c.s
 .PHONY : s21_matrix.c.s
 
+unit_tests/s21_calc_complements_test.o: unit_tests/s21_calc_complements_test.c.o
+.PHONY : unit_tests/s21_calc_complements_test.o
+
+# target to build an object file
+unit_tests/s21_calc_complements_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o
+.PHONY : unit_tests/s21_calc_complements_test.c.o
+
+unit_tests/s21_calc_complements_test.i: unit_tests/s21_calc_complements_test.c.i
+.PHONY : unit_tests/s21_calc_complements_test.i
+
+# target to preprocess a source file
+unit_tests/s21_calc_complements_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.i
+.PHONY : unit_tests/s21_calc_complements_test.c.i
+
+unit_tests/s21_calc_complements_test.s: unit_tests/s21_calc_complements_test.c.s
+.PHONY : unit_tests/s21_calc_complements_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_calc_complements_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.s
+.PHONY : unit_tests/s21_calc_complements_test.c.s
+
+unit_tests/s21_create_test.o: unit_tests/s21_create_test.c.o
+.PHONY : unit_tests/s21_create_test.o
+
+# target to build an object file
+unit_tests/s21_create_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o
+.PHONY : unit_tests/s21_create_test.c.o
+
+unit_tests/s21_create_test.i: unit_tests/s21_create_test.c.i
+.PHONY : unit_tests/s21_create_test.i
+
+# target to preprocess a source file
+unit_tests/s21_create_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.i
+.PHONY : unit_tests/s21_create_test.c.i
+
+unit_tests/s21_create_test.s: unit_tests/s21_create_test.c.s
+.PHONY : unit_tests/s21_create_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_create_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.s
+.PHONY : unit_tests/s21_create_test.c.s
+
+unit_tests/s21_determinant_test.o: unit_tests/s21_determinant_test.c.o
+.PHONY : unit_tests/s21_determinant_test.o
+
+# target to build an object file
+unit_tests/s21_determinant_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.o
+.PHONY : unit_tests/s21_determinant_test.c.o
+
+unit_tests/s21_determinant_test.i: unit_tests/s21_determinant_test.c.i
+.PHONY : unit_tests/s21_determinant_test.i
+
+# target to preprocess a source file
+unit_tests/s21_determinant_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.i
+.PHONY : unit_tests/s21_determinant_test.c.i
+
+unit_tests/s21_determinant_test.s: unit_tests/s21_determinant_test.c.s
+.PHONY : unit_tests/s21_determinant_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_determinant_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_determinant_test.c.s
+.PHONY : unit_tests/s21_determinant_test.c.s
+
+unit_tests/s21_eq_test.o: unit_tests/s21_eq_test.c.o
+.PHONY : unit_tests/s21_eq_test.o
+
+# target to build an object file
+unit_tests/s21_eq_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.o
+.PHONY : unit_tests/s21_eq_test.c.o
+
+unit_tests/s21_eq_test.i: unit_tests/s21_eq_test.c.i
+.PHONY : unit_tests/s21_eq_test.i
+
+# target to preprocess a source file
+unit_tests/s21_eq_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.i
+.PHONY : unit_tests/s21_eq_test.c.i
+
+unit_tests/s21_eq_test.s: unit_tests/s21_eq_test.c.s
+.PHONY : unit_tests/s21_eq_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_eq_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_eq_test.c.s
+.PHONY : unit_tests/s21_eq_test.c.s
+
+unit_tests/s21_inverse_test.o: unit_tests/s21_inverse_test.c.o
+.PHONY : unit_tests/s21_inverse_test.o
+
+# target to build an object file
+unit_tests/s21_inverse_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.o
+.PHONY : unit_tests/s21_inverse_test.c.o
+
+unit_tests/s21_inverse_test.i: unit_tests/s21_inverse_test.c.i
+.PHONY : unit_tests/s21_inverse_test.i
+
+# target to preprocess a source file
+unit_tests/s21_inverse_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.i
+.PHONY : unit_tests/s21_inverse_test.c.i
+
+unit_tests/s21_inverse_test.s: unit_tests/s21_inverse_test.c.s
+.PHONY : unit_tests/s21_inverse_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_inverse_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_inverse_test.c.s
+.PHONY : unit_tests/s21_inverse_test.c.s
+
+unit_tests/s21_matrix_gather.o: unit_tests/s21_matrix_gather.c.o
+.PHONY : unit_tests/s21_matrix_gather.o
+
+# target to build an object file
+unit_tests/s21_matrix_gather.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.o
+.PHONY : unit_tests/s21_matrix_gather.c.o
+
+unit_tests/s21_matrix_gather.i: unit_tests/s21_matrix_gather.c.i
+.PHONY : unit_tests/s21_matrix_gather.i
+
+# target to preprocess a source file
+unit_tests/s21_matrix_gather.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.i
+.PHONY : unit_tests/s21_matrix_gather.c.i
+
+unit_tests/s21_matrix_gather.s: unit_tests/s21_matrix_gather.c.s
+.PHONY : unit_tests/s21_matrix_gather.s
+
+# target to generate assembly for a file
+unit_tests/s21_matrix_gather.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_matrix_gather.c.s
+.PHONY : unit_tests/s21_matrix_gather.c.s
+
+unit_tests/s21_mult_matrix_test.o: unit_tests/s21_mult_matrix_test.c.o
+.PHONY : unit_tests/s21_mult_matrix_test.o
+
+# target to build an object file
+unit_tests/s21_mult_matrix_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.o
+.PHONY : unit_tests/s21_mult_matrix_test.c.o
+
+unit_tests/s21_mult_matrix_test.i: unit_tests/s21_mult_matrix_test.c.i
+.PHONY : unit_tests/s21_mult_matrix_test.i
+
+# target to preprocess a source file
+unit_tests/s21_mult_matrix_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.i
+.PHONY : unit_tests/s21_mult_matrix_test.c.i
+
+unit_tests/s21_mult_matrix_test.s: unit_tests/s21_mult_matrix_test.c.s
+.PHONY : unit_tests/s21_mult_matrix_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_mult_matrix_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_mult_matrix_test.c.s
+.PHONY : unit_tests/s21_mult_matrix_test.c.s
+
+unit_tests/s21_mult_number_test.o: unit_tests/s21_mult_number_test.c.o
+.PHONY : unit_tests/s21_mult_number_test.o
+
+# target to build an object file
+unit_tests/s21_mult_number_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o
+.PHONY : unit_tests/s21_mult_number_test.c.o
+
+unit_tests/s21_mult_number_test.i: unit_tests/s21_mult_number_test.c.i
+.PHONY : unit_tests/s21_mult_number_test.i
+
+# target to preprocess a source file
+unit_tests/s21_mult_number_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.i
+.PHONY : unit_tests/s21_mult_number_test.c.i
+
+unit_tests/s21_mult_number_test.s: unit_tests/s21_mult_number_test.c.s
+.PHONY : unit_tests/s21_mult_number_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_mult_number_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.s
+.PHONY : unit_tests/s21_mult_number_test.c.s
+
+unit_tests/s21_sub_test.o: unit_tests/s21_sub_test.c.o
+.PHONY : unit_tests/s21_sub_test.o
+
+# target to build an object file
+unit_tests/s21_sub_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o
+.PHONY : unit_tests/s21_sub_test.c.o
+
+unit_tests/s21_sub_test.i: unit_tests/s21_sub_test.c.i
+.PHONY : unit_tests/s21_sub_test.i
+
+# target to preprocess a source file
+unit_tests/s21_sub_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.i
+.PHONY : unit_tests/s21_sub_test.c.i
+
+unit_tests/s21_sub_test.s: unit_tests/s21_sub_test.c.s
+.PHONY : unit_tests/s21_sub_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_sub_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.s
+.PHONY : unit_tests/s21_sub_test.c.s
+
+unit_tests/s21_sum_test.o: unit_tests/s21_sum_test.c.o
+.PHONY : unit_tests/s21_sum_test.o
+
+# target to build an object file
+unit_tests/s21_sum_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o
+.PHONY : unit_tests/s21_sum_test.c.o
+
+unit_tests/s21_sum_test.i: unit_tests/s21_sum_test.c.i
+.PHONY : unit_tests/s21_sum_test.i
+
+# target to preprocess a source file
+unit_tests/s21_sum_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.i
+.PHONY : unit_tests/s21_sum_test.c.i
+
+unit_tests/s21_sum_test.s: unit_tests/s21_sum_test.c.s
+.PHONY : unit_tests/s21_sum_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_sum_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.s
+.PHONY : unit_tests/s21_sum_test.c.s
+
+unit_tests/s21_transpose_test.o: unit_tests/s21_transpose_test.c.o
+.PHONY : unit_tests/s21_transpose_test.o
+
+# target to build an object file
+unit_tests/s21_transpose_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o
+.PHONY : unit_tests/s21_transpose_test.c.o
+
+unit_tests/s21_transpose_test.i: unit_tests/s21_transpose_test.c.i
+.PHONY : unit_tests/s21_transpose_test.i
+
+# target to preprocess a source file
+unit_tests/s21_transpose_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.i
+.PHONY : unit_tests/s21_transpose_test.c.i
+
+unit_tests/s21_transpose_test.s: unit_tests/s21_transpose_test.c.s
+.PHONY : unit_tests/s21_transpose_test.s
+
+# target to generate assembly for a file
+unit_tests/s21_transpose_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.s
+.PHONY : unit_tests/s21_transpose_test.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +429,39 @@ help:
 	@echo "... s21_matrix.o"
 	@echo "... s21_matrix.i"
 	@echo "... s21_matrix.s"
+	@echo "... unit_tests/s21_calc_complements_test.o"
+	@echo "... unit_tests/s21_calc_complements_test.i"
+	@echo "... unit_tests/s21_calc_complements_test.s"
+	@echo "... unit_tests/s21_create_test.o"
+	@echo "... unit_tests/s21_create_test.i"
+	@echo "... unit_tests/s21_create_test.s"
+	@echo "... unit_tests/s21_determinant_test.o"
+	@echo "... unit_tests/s21_determinant_test.i"
+	@echo "... unit_tests/s21_determinant_test.s"
+	@echo "... unit_tests/s21_eq_test.o"
+	@echo "... unit_tests/s21_eq_test.i"
+	@echo "... unit_tests/s21_eq_test.s"
+	@echo "... unit_tests/s21_inverse_test.o"
+	@echo "... unit_tests/s21_inverse_test.i"
+	@echo "... unit_tests/s21_inverse_test.s"
+	@echo "... unit_tests/s21_matrix_gather.o"
+	@echo "... unit_tests/s21_matrix_gather.i"
+	@echo "... unit_tests/s21_matrix_gather.s"
+	@echo "... unit_tests/s21_mult_matrix_test.o"
+	@echo "... unit_tests/s21_mult_matrix_test.i"
+	@echo "... unit_tests/s21_mult_matrix_test.s"
+	@echo "... unit_tests/s21_mult_number_test.o"
+	@echo "... unit_tests/s21_mult_number_test.i"
+	@echo "... unit_tests/s21_mult_number_test.s"
+	@echo "... unit_tests/s21_sub_test.o"
+	@echo "... unit_tests/s21_sub_test.i"
+	@echo "... unit_tests/s21_sub_test.s"
+	@echo "... unit_tests/s21_sum_test.o"
+	@echo "... unit_tests/s21_sum_test.i"
+	@echo "... unit_tests/s21_sum_test.s"
+	@echo "... unit_tests/s21_transpose_test.o"
+	@echo "... unit_tests/s21_transpose_test.i"
+	@echo "... unit_tests/s21_transpose_test.s"
 .PHONY : help
 
 
