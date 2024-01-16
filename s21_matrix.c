@@ -53,7 +53,7 @@ void s21_remove_matrix(matrix_t *A) {
 
 int s21_eq_matrix(matrix_t *A, matrix_t *B) {
   int ret = SUCCESS_EQ;
-  if (s21_check_size_matrix(A, B)) {
+  if (!s21_check_size_matrix(A, B)) {
     ret = FAILURE_EQ;
   } else {
     ret = s21_loop_eq_matrix(A, B);
@@ -73,9 +73,12 @@ int s21_loop_eq_matrix(matrix_t *A, matrix_t *B) {
 }
 
 int s21_sum_matrix(matrix_t *A, matrix_t *B, matrix_t *result) {
-  if (s21_check_size_matrix(A, B)) {
-    return INVALID_MATRIX;
-  }
+    if ((A->rows != B->rows || A->columns != B->columns) && ( A->rows > 1 ||
+    A->columns > 1 || B->rows > 1 || B->columns > 1)) {
+        return CALC_ERROR;
+    } else if (A->columns < 1 || A-> rows < 1 || B->rows < 1 || B->columns < 1) {
+        return INVALID_MATRIX;
+    }
   s21_create_matrix(A->rows, A->columns, result);
 
   for (int i = 0; i < A->rows; i++) {
@@ -83,13 +86,15 @@ int s21_sum_matrix(matrix_t *A, matrix_t *B, matrix_t *result) {
       result->matrix[i][j] = A->matrix[i][j] + B->matrix[i][j];
     }
   }
-  return SUCCESS;
+  return OK;
 }
 
 int s21_sub_matrix(matrix_t *A, matrix_t *B, matrix_t *result) {
-  if (A->rows != B->rows || A->columns != B->columns || A->rows < 1 ||
-      A->columns < 1 || B->rows < 1 || B->columns < 1) {
-    return INVALID_MATRIX;
+  if ((A->rows != B->rows || A->columns != B->columns) && ( A->rows > 1 ||
+      A->columns > 1 || B->rows > 1 || B->columns > 1)) {
+    return CALC_ERROR;
+  } else if (A->columns < 1 || A-> rows < 1 || B->rows < 1 || B->columns < 1) {
+      return INVALID_MATRIX;
   }
   s21_create_matrix(A->rows, A->columns, result);
   for (int i = 0; i < A->rows; i++) {
@@ -97,7 +102,7 @@ int s21_sub_matrix(matrix_t *A, matrix_t *B, matrix_t *result) {
       result->matrix[i][j] = A->matrix[i][j] - B->matrix[i][j];
     }
   }
-  return SUCCESS;
+  return OK;
 }
 
 int s21_mult_number(matrix_t *A, double number, matrix_t *result) {
@@ -107,24 +112,27 @@ int s21_mult_number(matrix_t *A, double number, matrix_t *result) {
   s21_create_matrix(A->rows, A->columns, result);
     for (int i = 0; i < A->rows; i++) {
         for (int j = 0; j < A->columns; j++) {
-            result->matrix[i][j] = A->matrix[i][j] + number;
+            result->matrix[i][j] = A->matrix[i][j] * number;
         }
     }
-  return SUCCESS;
+  return OK;
 }
 
 int s21_mult_matrix(matrix_t *A, matrix_t *B, matrix_t *result) {
-    if (s21_check_size_matrix(A, B) || A -> columns != B -> rows) {
+    if ((A -> columns != B -> rows) && ( A->rows > 1 || A->columns > 1 || B->rows > 1 || B->columns > 1)) {
+        return CALC_ERROR;
+    } else if (A->columns < 1 || A-> rows < 1  || B->rows < 1 || B->columns < 1) {
         return INVALID_MATRIX;
     }
     s21_create_matrix(A-> rows, B -> columns, result);
-
     for (int i = 0; i < A->rows; i++) {
-        for (int j = 0; j < A->columns; j++) {
-
+        for (int j = 0; j < B->columns; j++) {
+            for (int k = 0; k < B->rows; k++) {
+                result->matrix[i][j] += A->matrix[i][k] * B->matrix[k][j];
+            }
         }
     }
-    return SUCCESS;
+    return OK;
 }
 
 double get_rand(double min, double max)
@@ -133,13 +141,42 @@ double get_rand(double min, double max)
     double div = RAND_MAX / range;
     return min + (rand() / div);
 }
-int s21_transpose(matrix_t *A, matrix_t *result){return SUCCESS;}
 
-int s21_calc_complements(matrix_t *A, matrix_t *result){return SUCCESS;}
+int s21_transpose(matrix_t *A, matrix_t *result){
 
-int s21_determinant(matrix_t *A, double *result){return SUCCESS;}
+   if (A->columns < 1 || A->rows < 1 || !A -> matrix ) {
+        return INCORRECT_MATRIX;
+    }
+    s21_create_matrix(A-> columns, A -> rows, result);
 
-int s21_inverse_matrix(matrix_t *A, matrix_t *result){return SUCCESS;}
+    for (int i = 0; i < A->rows; i++) {
+        for (int j = 0; j < A->columns; j++) {
+            result->matrix[j][i] = A->matrix[i][j];
+        }
+    }
+    return OK;
+
+}
+
+int s21_calc_complements(matrix_t *A, matrix_t *result){
+
+
+
+    return SUCCESS;
+}
+
+int s21_determinant(matrix_t *A, double *result){
+
+
+
+
+    return SUCCESS;
+}
+
+int s21_inverse_matrix(matrix_t *A, matrix_t *result){
+
+    return SUCCESS;
+}
 
 void run_tests() {
     Suite *suite = NULL;
