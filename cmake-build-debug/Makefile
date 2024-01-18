@@ -129,6 +129,78 @@ matrix/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/build
 .PHONY : matrix/fast
 
+s21_arithmetic.o: s21_arithmetic.c.o
+.PHONY : s21_arithmetic.o
+
+# target to build an object file
+s21_arithmetic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_arithmetic.c.o
+.PHONY : s21_arithmetic.c.o
+
+s21_arithmetic.i: s21_arithmetic.c.i
+.PHONY : s21_arithmetic.i
+
+# target to preprocess a source file
+s21_arithmetic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_arithmetic.c.i
+.PHONY : s21_arithmetic.c.i
+
+s21_arithmetic.s: s21_arithmetic.c.s
+.PHONY : s21_arithmetic.s
+
+# target to generate assembly for a file
+s21_arithmetic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_arithmetic.c.s
+.PHONY : s21_arithmetic.c.s
+
+s21_control.o: s21_control.c.o
+.PHONY : s21_control.o
+
+# target to build an object file
+s21_control.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_control.c.o
+.PHONY : s21_control.c.o
+
+s21_control.i: s21_control.c.i
+.PHONY : s21_control.i
+
+# target to preprocess a source file
+s21_control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_control.c.i
+.PHONY : s21_control.c.i
+
+s21_control.s: s21_control.c.s
+.PHONY : s21_control.s
+
+# target to generate assembly for a file
+s21_control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_control.c.s
+.PHONY : s21_control.c.s
+
+s21_converter.o: s21_converter.c.o
+.PHONY : s21_converter.o
+
+# target to build an object file
+s21_converter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_converter.c.o
+.PHONY : s21_converter.c.o
+
+s21_converter.i: s21_converter.c.i
+.PHONY : s21_converter.i
+
+# target to preprocess a source file
+s21_converter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_converter.c.i
+.PHONY : s21_converter.c.i
+
+s21_converter.s: s21_converter.c.s
+.PHONY : s21_converter.s
+
+# target to generate assembly for a file
+s21_converter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/s21_converter.c.s
+.PHONY : s21_converter.c.s
+
 s21_matrix.o: s21_matrix.c.o
 .PHONY : s21_matrix.o
 
@@ -426,6 +498,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... matrix"
+	@echo "... s21_arithmetic.o"
+	@echo "... s21_arithmetic.i"
+	@echo "... s21_arithmetic.s"
+	@echo "... s21_control.o"
+	@echo "... s21_control.i"
+	@echo "... s21_control.s"
+	@echo "... s21_converter.o"
+	@echo "... s21_converter.i"
+	@echo "... s21_converter.s"
 	@echo "... s21_matrix.o"
 	@echo "... s21_matrix.i"
 	@echo "... s21_matrix.s"

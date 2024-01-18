@@ -8,9 +8,7 @@
 #include "../s21_matrix.h"
 #include <time.h>
 #include <unistd.h>
-enum { OK = 0, INCORRECT_MATRIX = 1, CALC_ERROR = 2, MALLOC_FAILED = 3 };
-#define SUCCESS 1
-#define FAILURE 0
+
 Suite *suite_matrix_gather();
 Suite *suite_create_matrix();
 Suite *suite_transpose_matrix();

@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/matrix.dir/s21_arithmetic.c.o"
+  "CMakeFiles/matrix.dir/s21_arithmetic.c.o.d"
+  "CMakeFiles/matrix.dir/s21_control.c.o"
+  "CMakeFiles/matrix.dir/s21_control.c.o.d"
+  "CMakeFiles/matrix.dir/s21_converter.c.o"
+  "CMakeFiles/matrix.dir/s21_converter.c.o.d"
   "CMakeFiles/matrix.dir/s21_matrix.c.o"
   "CMakeFiles/matrix.dir/s21_matrix.c.o.d"
   "CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o"

@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/moroshma/matrix-c/s21_arithmetic.c" "CMakeFiles/matrix.dir/s21_arithmetic.c.o" "gcc" "CMakeFiles/matrix.dir/s21_arithmetic.c.o.d"
+  "/home/moroshma/matrix-c/s21_control.c" "CMakeFiles/matrix.dir/s21_control.c.o" "gcc" "CMakeFiles/matrix.dir/s21_control.c.o.d"
+  "/home/moroshma/matrix-c/s21_converter.c" "CMakeFiles/matrix.dir/s21_converter.c.o" "gcc" "CMakeFiles/matrix.dir/s21_converter.c.o.d"
   "/home/moroshma/matrix-c/s21_matrix.c" "CMakeFiles/matrix.dir/s21_matrix.c.o" "gcc" "CMakeFiles/matrix.dir/s21_matrix.c.o.d"
   "/home/moroshma/matrix-c/unit_tests/s21_calc_complements_test.c" "CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o" "gcc" "CMakeFiles/matrix.dir/unit_tests/s21_calc_complements_test.c.o.d"
   "/home/moroshma/matrix-c/unit_tests/s21_create_test.c" "CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o" "gcc" "CMakeFiles/matrix.dir/unit_tests/s21_create_test.c.o.d"

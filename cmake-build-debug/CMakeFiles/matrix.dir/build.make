@@ -237,6 +237,48 @@ CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/unit_tests/s21_transpose_test.c -o CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.s
 
+CMakeFiles/matrix.dir/s21_arithmetic.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/s21_arithmetic.c.o: /home/moroshma/matrix-c/s21_arithmetic.c
+CMakeFiles/matrix.dir/s21_arithmetic.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/matrix.dir/s21_arithmetic.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/s21_arithmetic.c.o -MF CMakeFiles/matrix.dir/s21_arithmetic.c.o.d -o CMakeFiles/matrix.dir/s21_arithmetic.c.o -c /home/moroshma/matrix-c/s21_arithmetic.c
+
+CMakeFiles/matrix.dir/s21_arithmetic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/s21_arithmetic.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/s21_arithmetic.c > CMakeFiles/matrix.dir/s21_arithmetic.c.i
+
+CMakeFiles/matrix.dir/s21_arithmetic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/s21_arithmetic.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/s21_arithmetic.c -o CMakeFiles/matrix.dir/s21_arithmetic.c.s
+
+CMakeFiles/matrix.dir/s21_converter.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/s21_converter.c.o: /home/moroshma/matrix-c/s21_converter.c
+CMakeFiles/matrix.dir/s21_converter.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/matrix.dir/s21_converter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/s21_converter.c.o -MF CMakeFiles/matrix.dir/s21_converter.c.o.d -o CMakeFiles/matrix.dir/s21_converter.c.o -c /home/moroshma/matrix-c/s21_converter.c
+
+CMakeFiles/matrix.dir/s21_converter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/s21_converter.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/s21_converter.c > CMakeFiles/matrix.dir/s21_converter.c.i
+
+CMakeFiles/matrix.dir/s21_converter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/s21_converter.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/s21_converter.c -o CMakeFiles/matrix.dir/s21_converter.c.s
+
+CMakeFiles/matrix.dir/s21_control.c.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/s21_control.c.o: /home/moroshma/matrix-c/s21_control.c
+CMakeFiles/matrix.dir/s21_control.c.o: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/matrix.dir/s21_control.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/matrix.dir/s21_control.c.o -MF CMakeFiles/matrix.dir/s21_control.c.o.d -o CMakeFiles/matrix.dir/s21_control.c.o -c /home/moroshma/matrix-c/s21_control.c
+
+CMakeFiles/matrix.dir/s21_control.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/matrix.dir/s21_control.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroshma/matrix-c/s21_control.c > CMakeFiles/matrix.dir/s21_control.c.i
+
+CMakeFiles/matrix.dir/s21_control.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/matrix.dir/s21_control.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroshma/matrix-c/s21_control.c -o CMakeFiles/matrix.dir/s21_control.c.s
+
 # Object files for target matrix
 matrix_OBJECTS = \
 "CMakeFiles/matrix.dir/s21_matrix.c.o" \
@@ -250,7 +292,10 @@ matrix_OBJECTS = \
 "CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o" \
 "CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o" \
 "CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o" \
-"CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o"
+"CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o" \
+"CMakeFiles/matrix.dir/s21_arithmetic.c.o" \
+"CMakeFiles/matrix.dir/s21_converter.c.o" \
+"CMakeFiles/matrix.dir/s21_control.c.o"
 
 # External object files for target matrix
 matrix_EXTERNAL_OBJECTS =
@@ -267,9 +312,12 @@ matrix: CMakeFiles/matrix.dir/unit_tests/s21_mult_number_test.c.o
 matrix: CMakeFiles/matrix.dir/unit_tests/s21_sub_test.c.o
 matrix: CMakeFiles/matrix.dir/unit_tests/s21_sum_test.c.o
 matrix: CMakeFiles/matrix.dir/unit_tests/s21_transpose_test.c.o
+matrix: CMakeFiles/matrix.dir/s21_arithmetic.c.o
+matrix: CMakeFiles/matrix.dir/s21_converter.c.o
+matrix: CMakeFiles/matrix.dir/s21_control.c.o
 matrix: CMakeFiles/matrix.dir/build.make
 matrix: CMakeFiles/matrix.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/moroshma/matrix-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable matrix"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/matrix.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

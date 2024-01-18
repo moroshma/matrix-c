@@ -17,5 +17,8 @@ add_executable(matrix
         unit_tests/s21_sub_test.c
         unit_tests/s21_sum_test.c
         unit_tests/s21_transpose_test.c
+        s21_arithmetic.c
+        s21_converter.c
+        s21_control.c
 )
 target_link_libraries(matrix check pthread m)

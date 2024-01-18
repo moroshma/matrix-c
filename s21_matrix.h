@@ -6,19 +6,17 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <math.h>
-
+#include <malloc.h>
+#include <stdlib.h>
 typedef struct matrix_struct {
     double **matrix;
     int rows;
     int columns;
 } matrix_t;
 
-enum ERROR {
-    SUCCESS,
-    INVALID_MATRIX,
-    INVALID_CALC,
-    CALLOC_ERROR
-};
+enum { OK = 0, INCORRECT_MATRIX = 1, CALC_ERROR = 2, MALLOC_FAILED = 3 };
+#define SUCCESS 1
+#define FAILURE 0
 
 
 

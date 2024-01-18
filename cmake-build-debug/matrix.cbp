@@ -76,6 +76,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/moroshma/matrix-c/s21_arithmetic.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/s21_control.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/moroshma/matrix-c/s21_converter.c">
+			<Option target="matrix"/>
+		</Unit>
 		<Unit filename="/home/moroshma/matrix-c/s21_matrix.c">
 			<Option target="matrix"/>
 		</Unit>
