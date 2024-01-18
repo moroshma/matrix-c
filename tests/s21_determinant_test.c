@@ -156,32 +156,28 @@ END_TEST
 
 START_TEST(determinant9) {
 
-    matrix_t m = {0};
-    int size = 3;
-    s21_create_matrix(size, size, &m);
+  matrix_t m = {0};
+  int size = 3;
+  s21_create_matrix(size, size, &m);
 
-    m.matrix[0][0] = 6;
-    m.matrix[0][1] = -2;
-    m.matrix[0][2] = -4;
+  m.matrix[0][0] = 6;
+  m.matrix[0][1] = -2;
+  m.matrix[0][2] = -4;
 
-    m.matrix[1][0] = -2;
-    m.matrix[1][1] = -3;
-    m.matrix[1][2] = -4;
+  m.matrix[1][0] = -2;
+  m.matrix[1][1] = -3;
+  m.matrix[1][2] = -4;
 
-    m.matrix[2][0] = -3;
-    m.matrix[2][1] = 4;
-    m.matrix[2][2] = 5;
+  m.matrix[2][0] = -3;
+  m.matrix[2][1] = 4;
+  m.matrix[2][2] = 5;
 
+  double res = 0;
+  int code = s21_determinant(&m, &res);
+  ck_assert_double_eq_tol(res, 30, 1e-6);
+  ck_assert_int_eq(code, OK);
 
-
-
-
-    double res = 0;
-    int code = s21_determinant(&m, &res);
-    ck_assert_double_eq_tol(res, 30, 1e-6);
-    ck_assert_int_eq(code, OK);
-
-    s21_remove_matrix(&m);
+  s21_remove_matrix(&m);
 }
 END_TEST
 
@@ -197,7 +193,7 @@ Suite *suite_determinant(void) {
   tcase_add_test(tc, determinant6);
   tcase_add_loop_test(tc, determinant7, 0, 100);
   tcase_add_test(tc, determinant8);
-    tcase_add_test(tc, determinant9);
+  tcase_add_test(tc, determinant9);
 
   suite_add_tcase(s, tc);
   return s;

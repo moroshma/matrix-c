@@ -1,13 +1,7 @@
 #ifndef SRC_UNIT_TESTS_S21_MATRIX_H_
 #define SRC_UNIT_TESTS_S21_MATRIX_H_
 
-#include <check.h>
-#include <time.h>
-#include <unistd.h>
-
 #include "../s21_matrix.h"
-#include <time.h>
-#include <unistd.h>
 
 Suite *suite_matrix_gather();
 Suite *suite_create_matrix();

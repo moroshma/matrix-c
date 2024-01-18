@@ -2,9 +2,7 @@
 // Created by moroshma on 12/28/23.
 //
 
-#include "unit_tests/s21_test_matrix.h"
-
-
+#include "tests/s21_test_matrix.h"
 
 void run_tests() {
   Suite *suite = NULL;
