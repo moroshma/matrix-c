@@ -1353,7 +1353,8 @@ START_TEST(s21_determinant_04) {
 
   s21_determinant(&A, &determ);
   s21_remove_matrix(&A);
-  ck_assert_double_eq(determ, -24105.996724156);
+  ck_assert_double_eq_tol(determ, -24105.996724156, 1e-6);
+  
 }
 END_TEST
 

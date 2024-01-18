@@ -53,5 +53,7 @@ int s21_determinant(matrix_t *A, double *result);
 int s21_inverse_matrix(matrix_t *A, matrix_t *result);
 
 int s21_safe_calloc(int rows, int columns, matrix_t *result);
-
-
+double determinantOfMatrix(double **matrix, int n);
+int Minor(int row, int column, matrix_t *A, matrix_t *result);
+double s21_determinant_recursive(matrix_t *A);
+void print_matrix(matrix_t *A);
