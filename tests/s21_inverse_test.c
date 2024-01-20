@@ -35,20 +35,19 @@ END_TEST
 START_TEST(test_one_by_one) {
   matrix_t m = {0};
   matrix_t result = {0};
-  int codec = s21_create_matrix(1, 1, &m);
-  if (!codec) {
+  s21_create_matrix(1, 1, &m);
 
-    m.matrix[0][0] = 1431.12312331;
+  m.matrix[0][0] = 1431.12312331;
 
-   // int code = s21_inverse_matrix(&m, &result);
+  int code = s21_inverse_matrix(&m, &result);
 
-    //ck_assert_int_eq(result.matrix[0][0] == (1.0 / m.matrix[0][0]), 1);
-    //ck_assert_int_eq(code, OK);
-    s21_remove_matrix(&m);
-    //s21_remove_matrix(&result);
-  }else {
-      s21_remove_matrix(&m);
-  }
+  // print_matrix(&result);
+
+  ck_assert_int_eq(result.matrix[0][0] == (1.0 / m.matrix[0][0]), 1);
+  ck_assert_int_eq(code, SUCCESS_EQ);
+
+  s21_remove_matrix(&m);
+  s21_remove_matrix(&result);
 }
 END_TEST
 
@@ -61,7 +60,7 @@ START_TEST(test_zero_det) {
     ck_assert_int_eq(code, CALC_ERROR);
     s21_remove_matrix(&m);
   }
-    s21_remove_matrix(&m);
+  s21_remove_matrix(&m);
 }
 END_TEST
 
@@ -94,7 +93,7 @@ START_TEST(test_not_sqare) {
   matrix_t m = {0};
   matrix_t result = {0};
   int codec = s21_create_matrix(1, 4, &m);
-  if (codec) {
+  if (!codec) {
     int code = s21_inverse_matrix(&m, &result);
     ck_assert_int_eq(code, CALC_ERROR);
     s21_remove_matrix(&m);
@@ -105,50 +104,48 @@ END_TEST
 START_TEST(test_normal) {
   matrix_t m = {0};
   matrix_t expected = {0};
-  int codec1, codec2;
-  codec1 = s21_create_matrix(3, 3, &m);
-  if (codec1)
-    codec2 = s21_create_matrix(3, 3, &expected);
+  s21_create_matrix(3, 3, &m);
 
-  if (codec1 && codec2) {
-    m.matrix[0][0] = 2;
-    m.matrix[0][1] = 5;
-    m.matrix[0][2] = 7;
+  s21_create_matrix(3, 3, &expected);
 
-    m.matrix[1][0] = 6;
-    m.matrix[1][1] = 3;
-    m.matrix[1][2] = 4;
+  m.matrix[0][0] = 2;
+  m.matrix[0][1] = 5;
+  m.matrix[0][2] = 7;
 
-    m.matrix[2][0] = 5;
-    m.matrix[2][1] = -2;
-    m.matrix[2][2] = -3;
+  m.matrix[1][0] = 6;
+  m.matrix[1][1] = 3;
+  m.matrix[1][2] = 4;
 
-    expected.matrix[0][0] = 1;
-    expected.matrix[0][1] = -1;
-    expected.matrix[0][2] = 1;
+  m.matrix[2][0] = 5;
+  m.matrix[2][1] = -2;
+  m.matrix[2][2] = -3;
 
-    expected.matrix[1][0] = -38;
-    expected.matrix[1][1] = 41;
-    expected.matrix[1][2] = -34;
+  expected.matrix[0][0] = 1;
+  expected.matrix[0][1] = -1;
+  expected.matrix[0][2] = 1;
 
-    expected.matrix[2][0] = 27;
-    expected.matrix[2][1] = -29;
-    expected.matrix[2][2] = 24;
-    matrix_t result = {0};
-    int code = s21_inverse_matrix(&m, &result);
+  expected.matrix[1][0] = -38;
+  expected.matrix[1][1] = 41;
+  expected.matrix[1][2] = -34;
 
-    ck_assert_int_eq(s21_eq_matrix(&result, &expected), SUCCESS);
-    ck_assert_int_eq(code, OK);
+  expected.matrix[2][0] = 27;
+  expected.matrix[2][1] = -29;
+  expected.matrix[2][2] = 24;
+  matrix_t result = {0};
 
-    s21_remove_matrix(&m);
-    s21_remove_matrix(&result);
-    s21_remove_matrix(&expected);
-  }
+  int code = s21_inverse_matrix(&m, &result);
+
+  ck_assert_int_eq(s21_eq_matrix(&result, &expected), SUCCESS);
+  ck_assert_int_eq(code, SUCCESS_EQ);
+
+  s21_remove_matrix(&m);
+  s21_remove_matrix(&result);
+  s21_remove_matrix(&expected);
 }
 END_TEST
 
 START_TEST(inverse) {
-  /* const int size = rand() % 100 + 1; */
+
   const int size = 3;
   matrix_t m = {0};
   s21_create_matrix(size, size, &m);

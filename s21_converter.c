@@ -48,7 +48,8 @@ double s21_determinant_recursive(matrix_t *A) {
     s21_create_matrix(A->rows - 1, A->columns - 1, &minor);
     for (int i = 0; i < A->rows; i++) {
       Minor(0, i, A, &minor);
-      result += pow((-1), i) * A->matrix[0][i] * s21_determinant_recursive(&minor);
+      result +=
+          pow((-1), i) * A->matrix[0][i] * s21_determinant_recursive(&minor);
     }
     s21_remove_matrix(&minor);
   }
@@ -77,25 +78,29 @@ int s21_inverse_matrix(matrix_t *A, matrix_t *result) {
     return INCORRECT_MATRIX;
   }
 
-  double det = A->matrix[0][0];
-  if (A->rows != 1) {
-    det = s21_determinant_recursive(A);
+  if (A->rows == 1 && A->columns == 1) {
+    s21_create_matrix(1, 1, result);
+    result->matrix[0][0] = 1 / A->matrix[0][0];
+  } else {
+    double det = A->matrix[0][0];
+    if (A->rows != 1) {
+      det = s21_determinant_recursive(A);
+    }
+    if (det == 0) {
+      return CALC_ERROR;
+    }
+    matrix_t new_matrix = {};
+    matrix_t tmp_trans = {};
+
+    s21_calc_complements(A, &new_matrix);
+
+    s21_transpose(&new_matrix, &tmp_trans);
+
+    s21_mult_number(&tmp_trans, 1.0 / det, result);
+
+    s21_remove_matrix(&new_matrix);
+    s21_remove_matrix(&tmp_trans);
   }
-
-  if (det == 0) {
-    return CALC_ERROR;
-  }
-  matrix_t new_matrix = {};
-  matrix_t tmp_trans = {};
-
-  s21_calc_complements(A, &new_matrix);
-
-  s21_transpose(&new_matrix, &tmp_trans);
-  s21_mult_number(&tmp_trans, 1.0 / det, result);
-
-  s21_remove_matrix(&new_matrix);
-  s21_remove_matrix(&tmp_trans);
-
   return SUCCESS;
 }
 
@@ -120,5 +125,5 @@ int s21_calc_complements(matrix_t *A, matrix_t *result) {
     }
   }
 
-  return SUCCESS;
+  return OK;
 }

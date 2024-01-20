@@ -10,7 +10,6 @@ START_TEST(test_one_by_one) {
     ck_assert_int_eq(code, CALC_ERROR);
   }
   s21_remove_matrix(&m);
-
 }
 END_TEST
 
@@ -40,39 +39,38 @@ START_TEST(test_normal) {
   matrix_t result = {0};
   int code1 = s21_create_matrix(3, 3, &m);
   int code2 = s21_create_matrix(3, 3, &expected);
-  if (!code1 && !code2) {
-    m.matrix[0][0] = 1;
-    m.matrix[0][1] = 2;
-    m.matrix[0][2] = 3;
 
-    m.matrix[1][0] = 0;
-    m.matrix[1][1] = 4;
-    m.matrix[1][2] = 2;
+  m.matrix[0][0] = 1;
+  m.matrix[0][1] = 2;
+  m.matrix[0][2] = 3;
 
-    m.matrix[2][0] = 5;
-    m.matrix[2][1] = 2;
-    m.matrix[2][2] = 1;
+  m.matrix[1][0] = 0;
+  m.matrix[1][1] = 4;
+  m.matrix[1][2] = 2;
 
-    expected.matrix[0][0] = 0;
-    expected.matrix[0][1] = 10;
-    expected.matrix[0][2] = -20;
+  m.matrix[2][0] = 5;
+  m.matrix[2][1] = 2;
+  m.matrix[2][2] = 1;
 
-    expected.matrix[1][0] = 4;
-    expected.matrix[1][1] = -14;
-    expected.matrix[1][2] = 8;
+  expected.matrix[0][0] = 0;
+  expected.matrix[0][1] = 10;
+  expected.matrix[0][2] = -20;
 
-    expected.matrix[2][0] = -8;
-    expected.matrix[2][1] = -2;
-    expected.matrix[2][2] = 4;
+  expected.matrix[1][0] = 4;
+  expected.matrix[1][1] = -14;
+  expected.matrix[1][2] = 8;
 
-    int code = s21_calc_complements(&m, &result);
+  expected.matrix[2][0] = -8;
+  expected.matrix[2][1] = -2;
+  expected.matrix[2][2] = 4;
 
-    ck_assert_int_eq(s21_eq_matrix(&result, &expected), SUCCESS);
-    ck_assert_int_eq(code, OK);
-    s21_remove_matrix(&m);
-    s21_remove_matrix(&result);
-    s21_remove_matrix(&expected);
-  }
+  int code = s21_calc_complements(&m, &result);
+
+  ck_assert_int_eq(s21_eq_matrix(&result, &expected), SUCCESS);
+  ck_assert_int_eq(code, OK);
+  s21_remove_matrix(&m);
+  s21_remove_matrix(&result);
+  s21_remove_matrix(&expected);
 }
 END_TEST
 
