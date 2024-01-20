@@ -20,12 +20,14 @@ enum { OK = 0, INCORRECT_MATRIX = 1, CALC_ERROR = 2, MALLOC_FAILED = 3 };
 #define SUCCESS 1
 #define FAILURE 0
 
+
 /*
  0 - OK
  1 - Ошибка, некорректная матрица
  2 - Ошибка вычисления (несовпадающие размеры матриц; матрица, для которой
  нельзя провести вычисления и т.д.)
 */
+
 
 bool s21_check_size_matrix(matrix_t *A, matrix_t *B);
 
@@ -52,6 +54,6 @@ int s21_inverse_matrix(matrix_t *A, matrix_t *result);
 
 int s21_safe_calloc(int rows, int columns, matrix_t *result);
 
-int Minor(int row, int column, matrix_t *A, matrix_t *result);
+void Minor(int row, int col, matrix_t *A, matrix_t *result);
 
 double s21_determinant_recursive(matrix_t *A);
